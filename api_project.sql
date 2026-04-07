@@ -110,7 +110,7 @@ LEFT JOIN courses2 c
 ON s.course_id = c.course_id
 ORDER BY c.course_name ASC;
 
---FIND COURSES THAT HAVE MORE THEN ONE STUDENT ENROLLED 
+--FIND COURSES THAT HAVE MORE THEN ONE STUDENT ENROLLED (made some changes )
 SELECT c.course_name, COUNT(s.student_id) AS total_students
 FROM courses2 c
 JOIN students2 s
